@@ -18,12 +18,12 @@ puts 'No 3'
 contactData = [["ana@email.com","123 Main St.","555-123-4567"],["avion@email.com","484 Not Found Dr.","123-234-3454"]]
 contacts = {"Analyn Cajocson" => {}, "Avion School" => {}}
 contacts["Analyn Cajocson"][:email] = contactData[0][0]
-contacts["Analyn Cajocson"][:address] = contactData[0][0]
-contacts["Analyn Cajocson"][:phone] = contactData[0][0]
+contacts["Analyn Cajocson"][:address] = contactData[0][1]
+contacts["Analyn Cajocson"][:phone] = contactData[0][2]
 
 contacts["Avion School"][:email] = contactData[1][0]
-contacts["Avion School"][:address] = contactData[1][0]
-contacts["Avion School"][:phone] = contactData[1][0]
+contacts["Avion School"][:address] = contactData[1][1]
+contacts["Avion School"][:phone] = contactData[1][2]
 
 puts contacts
 

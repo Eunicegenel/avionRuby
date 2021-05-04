@@ -8,26 +8,50 @@ module BuyerPermission
   def buy
     puts "Buyer has bought an item"
   end
-
 end
 
 class User
-  def initialize(username, password, ip_address)
-    
+  def initialize(username,password, ip_address)
+    @username = username
+    @password = password
+    @ip_address = ip_address
+  end
+
+  def change_password= (new_password)
+    "Password Changed!"
   end
 
   protected
   def login
-    puts "User logged in. IP address: #@{ip_address}"
+    puts "User logged in. IP address: #{@ip_address}"
   end
 end
 
 
 class Admin < User
+  attr_reader :password
+  include AdminPermisson
+  def admin_login
+    login
+  end
+
+  def change_password= (new_password)
+    @password = new_password
+    return puts "Admin " + super
+  end
 end
 
 
 class Buyer < User
+  include BuyerPermission
+  def buyer_login
+    login
+  end
+
+  def change_password= (new_password)
+    @password = new_password
+    return puts "Buyer " + super
+  end
 end
 
 

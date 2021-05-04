@@ -1,5 +1,6 @@
 # no can be any number
-no = 25 #in this instance is 25 to get perfect square
+#in this instance is 25 to get perfect square
+no = 25 
 
 (0..no).each do |n|
   if (n * n) == no

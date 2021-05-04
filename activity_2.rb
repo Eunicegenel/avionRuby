@@ -1,15 +1,9 @@
-print 'Input number : '
-STDOUT.flush  
-no = (gets.chomp).to_i
-count = 0
-half = no/2
+# no can be any number
+no = 25 #in this instance is 25 to get perfect square
 
-until count > half do
-  check = count * count
-  if check === no
-    return puts true
+(0..no).each do |n|
+  if (n * n) == no
+    return p true
   end
-  count += 1
 end
-
-print "#{no} is not a square number"
+p false

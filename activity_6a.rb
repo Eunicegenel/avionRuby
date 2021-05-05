@@ -1,17 +1,17 @@
 class Confection
-  def baking
+  def prepare
     "Baking at 350 degrees for 25 min."
   end
 end
 
 class BananaCake < Confection
-  def baking
+  def prepare
     p super
   end
 end
 
 class Cupcake < Confection
-  def baking
+  def prepare
     p super + " Applying frosting."
   end
 end
@@ -20,5 +20,5 @@ end
 cupCake1 = Cupcake.new
 bananaCake1 = BananaCake.new
 
-cupCake1.baking 
-bananaCake1.baking
+cupCake1.prepare 
+bananaCake1.prepare

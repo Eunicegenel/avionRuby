@@ -9,5 +9,5 @@ class Parallelogram
   end
 end
 
-newSquareShape = Parallelogram.new(10,25)
-puts newSquareShape.area
+new_square_shape = Parallelogram.new(10,25)
+puts new_square_shape.area

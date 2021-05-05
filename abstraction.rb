@@ -35,10 +35,10 @@ class VolumeCircleBases
   end
 end
 
-cylinder1 = VolumeCircleBases.new("cylinder",5,7)
-cone1 = VolumeCircleBases.new("cone",5,7)
-sphere1 = VolumeCircleBases.new("sphere",5,0)
+cylinder_1 = VolumeCircleBases.new("cylinder",5,7)
+cone_1 = VolumeCircleBases.new("cone",5,7)
+sphere_1 = VolumeCircleBases.new("sphere",5,0)
 
-cylinder1.get_volume
-cone1.get_volume
-sphere1.get_volume
+cylinder_1.get_volume
+cone_1.get_volume
+sphere_1.get_volume

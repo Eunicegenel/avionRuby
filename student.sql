@@ -25,6 +25,6 @@ VALUES (5,'Luna','Dunnofour','Lovegood',16,'Makati');
 INSERT INTO student (id,first_name,middle_name,last_name,age,location)
 VALUES (6,'Neville','Dunnofive','Longbottom',17,'Makati');
 
-UPDATE student SET location = 'Manila' WHERE id = 4;
+UPDATE student SET first_name = 'Ivan', middle_name = 'Ingram', last_name = 'Howard', age = '25', location = 'Bulacan' WHERE id = 1;
 
 DELETE FROM student WHERE id = 6;

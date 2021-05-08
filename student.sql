@@ -20,10 +20,10 @@ INSERT INTO student (id,first_name,middle_name,last_name,age,location)
 VALUES (4,'Ginny','Dunnotwo','Weasly',16,'Quezon City');
 
 INSERT INTO student (id,first_name,middle_name,last_name,age,location)
-VALUES (5,'Luna','Dunnofour','Lovegood',16,'Makati');
+VALUES (5,'Luna','Dunnofour','Lovegood',16,'Manila');
 
 INSERT INTO student (id,first_name,middle_name,last_name,age,location)
-VALUES (6,'Neville','Dunnofive','Longbottom',17,'Makati');
+VALUES (6,'Neville','Dunnofive','Longbottom',17,'Manila');
 
 UPDATE student SET first_name = 'Ivan', middle_name = 'Ingram', last_name = 'Howard', age = '25', location = 'Bulacan' WHERE id = 1;
 
